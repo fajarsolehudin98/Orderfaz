@@ -32,6 +32,7 @@ describe("Dashboard", () => {
     );
   });
 
+  //   Cek statistik dari performa toko dan checkout
   it("Performa Toko dan Checkout", () => {
     cy.get(".flex.mb-8 > .grid > :nth-child(1)").should(
       "contain",

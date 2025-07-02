@@ -15,7 +15,7 @@ describe("Kupon", () => {
     }
   });
 
-  //   Membuat kupon baru
+  //   Membuat kupon baru.
   it("Buat kupon baru", () => {
     const dataInput = getFakeUser();
 

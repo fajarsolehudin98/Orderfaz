@@ -1,7 +1,7 @@
 import { getFakeUser } from "../../support/fakeHelper";
 
 describe("Store", () => {
-  it("Buat order", () => {
+  it("Buat order store", () => {
     const dataPenerima = getFakeUser();
     cy.visit("https://myshoes-store.fazlink.co/").wait(5000);
 
