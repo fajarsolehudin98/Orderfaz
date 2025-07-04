@@ -14,7 +14,7 @@ describe("Store", () => {
       .type("baju lebaran{enter}")
       .wait(2000);
 
-    cy.contains("baju lebaran").click();
+    cy.contains("h1", "baju lebaran").click();
 
     // Tambahkan ke keranjang
     cy.get(".justify-around > #button")
