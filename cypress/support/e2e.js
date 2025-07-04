@@ -15,14 +15,3 @@
 
 // Import commands.js using ES2015 syntax:
 import "./loginCommands";
-
-Cypress.Commands.overwrite("intercept", (originalFn, ...args) => {
-  // Deteksi fetch JSON yang tidak ingin ditampilkan
-  if (
-    typeof args[0] === "string" &&
-    args[0].includes("indonesia-city.geo.json")
-  ) {
-    args[2] = { ...args[2], log: false };
-  }
-  return originalFn(...args);
-});

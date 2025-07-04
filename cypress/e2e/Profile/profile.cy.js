@@ -14,6 +14,6 @@ describe("Profile", () => {
   it("Perubahan nama akun", () => {
     const account = getFakeUser();
 
-    cy.get('[data-cypress-el="true"]').click();
+    cy.get("svg.iconify--material-symbols");
   });
 });

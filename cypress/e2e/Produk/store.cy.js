@@ -1,7 +1,7 @@
 import { getFakeUser } from "../../support/fakeHelper";
 
 describe("Store", () => {
-  it("Buat order", () => {
+  it("Buat order store", () => {
     const dataPenerima = getFakeUser();
     cy.visit("https://myshoes-store.fazlink.co/").wait(5000);
 
@@ -14,7 +14,7 @@ describe("Store", () => {
       .type("baju lebaran{enter}")
       .wait(2000);
 
-    cy.contains("baju lebaran").click();
+    cy.contains("h1", "baju lebaran").click();
 
     // Tambahkan ke keranjang
     cy.get(".justify-around > #button")
