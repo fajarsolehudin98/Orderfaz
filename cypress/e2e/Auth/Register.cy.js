@@ -4,7 +4,7 @@ describe("Register", () => {
   it("Valid Register", () => {
     const user = getFakeUser();
 
-    // REGISTER DENGAN DATA YANG VALID
+    // REGISTER DENGAN DATA EMAIL DAN PASSWORD YANG VALID
     cy.visit("/register");
     cy.get("#email")
       .type(user.email, { delay: 50 })
