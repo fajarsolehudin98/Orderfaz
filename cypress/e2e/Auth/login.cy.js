@@ -5,6 +5,9 @@ describe("Login", () => {
     cy.visit("/login");
     cy.fixture("dataLogin.json").as("dataLogin");
   });
+
+  // LOGIN DENGAN DATA DAN EMAIL YANG VALID
+
   it("Valid Login", function () {
     cy.get('[data-cy="email-phone-input"]')
       .type(this.dataLogin.email, {
